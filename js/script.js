@@ -43,6 +43,6 @@ dadosOutput.innerHTML += '<br> Scelta utente ' +lancioUtente ;
 if (lancioComputer > lancioUtente){
     dadosOutput.innerHTML += '<br> Il computer ha vinto ' + lancioComputer;
 }else{
-    dadosOutput.innerHTML += "<br> L'utente ha vinto " + lancioComputer;
+    dadosOutput.innerHTML += "<br> L'utente ha vinto " + lancioUtente;
 }
 
