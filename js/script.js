@@ -9,13 +9,16 @@ var listaEmail = ['gianni@gmail.com', 'marco@yahoo.it', 'edoardo@gmail.com', 'pi
 // console.log(listaEmail);
 // console.log(listaEmail[2]);
 
-inputEmail = false;
+check = false;
 var outPut = document.getElementById('email-result');
 
 for (var i = 0; i < listaEmail;i++) {
-    if (inputEmail=true) {
-        outPut.innerHTML='Ottimo verrai ricordato '+inputEmail;
-    }else{
-        outPut.innerHTML='Mi dispiace ma non ti abbiamo trovato nel DataBase, iscriviti nel nostro  main site'
+    if (listaEmail[i] === inputEmail) {
+        check = true;
     }
+}
+if (check){
+    outPut.innerHTML='Ottimo verrai ricordato '+inputEmail;
+}else{
+    outPut.innerHTML='Scusa ma non ti abbiamo trovato '+inputEmail;
 }
