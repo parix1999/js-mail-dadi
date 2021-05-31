@@ -12,7 +12,7 @@ var listaEmail = ['gianni@gmail.com', 'marco@yahoo.it', 'edoardo@gmail.com', 'pi
 check = false;
 var outPut = document.getElementById('email-result');
 
-for (var i = 0; i < listaEmail;i++) {
+for (var i = 0; i < listaEmail.length;i++) {
     if (listaEmail[i] === inputEmail) {
         check = true;
     }
