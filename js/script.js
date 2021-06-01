@@ -13,7 +13,7 @@ check = false;
 var outPut = document.getElementById('email');
 
 for (var i = 0; i < listaEmail.length;i++) {
-    if (listaEmail[i] === inputEmail) {
+    if (inputEmail === listaEmail[i] ) {
         check = true;
     }
 }
@@ -42,7 +42,9 @@ dadosOutput.innerHTML += '<br> Scelta utente ' +lancioUtente ;
 
 if (lancioComputer > lancioUtente){
     dadosOutput.innerHTML += '<br> Il computer ha vinto ' + lancioComputer;
-}else{
+}else if (lancioUtente > lancioComputer){
     dadosOutput.innerHTML += "<br> L'utente ha vinto " + lancioUtente;
+}else{
+    dadosOutput.innerHTML += "<br> Pari!!!! ";
 }
 
